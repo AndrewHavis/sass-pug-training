@@ -1,0 +1,23 @@
+{
+  "name": "sass-training",
+  "version": "1.0.0",
+  "description": "I am training myself in SASS",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "training",
+    "sass",
+    "css"
+  ],
+  "author": "Andrew Havis",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "glob": "^7.1.0",
+    "node-sass": "^3.10.0",
+    "node-sass-middleware": "^0.9.8",
+    "pug": "^2.0.0-beta6"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "sass-training",
+  "description": "I am training myself in SASS",
+  "main": "app.js",
+  "authors": [
+    "Andrew Havis"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "training",
+    "sass",
+    "css"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

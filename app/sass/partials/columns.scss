@@ -1,0 +1,32 @@
+@import 'shapes';
+
+.columns {
+    font-family: 'Comic Sans MS';
+}
+
+.col-left {
+    @extend .columns;
+    $colour: blue;
+    color: $colour;
+    .square {
+        @include rectangle(100px, 100px, $colour);
+    }
+}
+
+.col-middle {
+    @extend .columns;
+    $colour: red;
+    color: $colour;
+    .circle {
+        @include circle(200px, $colour);
+    }
+}
+
+.col-right {
+    @extend .columns;
+    $colour: green;
+    color: $colour;
+    .doughnut {
+        @include doughnut(300px, $colour);
+    }
+}

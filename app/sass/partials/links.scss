@@ -1,0 +1,13 @@
+$colour: blue;
+
+.link {
+    color: $colour;
+}
+
+.google-link:hover {
+    color: darken($colour, 25%);
+}
+
+.my-website-link:hover {
+    color: lighten($colour, 30%);
+}

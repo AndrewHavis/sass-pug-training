@@ -1,0 +1,30 @@
+@import 'variables';
+
+.shape {
+    display: table;
+    margin: 0 auto;
+}
+
+@mixin rectangle($width, $height, $colour) {
+    @extend .shape;
+    width: $width;
+    height: $height;
+    background-color: $colour;
+}
+
+@mixin circle($diameter, $colour) {
+    @extend .shape;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    background-color: $colour;
+}
+
+@mixin doughnut($diameter, $colour) {
+    @extend .shape;
+    border: ($diameter / 4) solid $colour;
+    width: $diameter;
+    height: $diameter;
+    border-radius: $diameter;
+    background-color: $backgroundColour;
+}
