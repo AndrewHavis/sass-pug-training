@@ -29,4 +29,7 @@
     .doughnut {
         @include doughnut(300px, $colour);
     }
+    .doughnut-hover {
+        @include doughnut(300px, yellow);
+    }
 }

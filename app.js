@@ -8,9 +8,22 @@ const app = express();
 const pugCompiler = require(__dirname + '/scripts/compilers/pug');
 const sassCompiler = require(__dirname + '/scripts/compilers/sass');
 
+// Import fs-extra
+const fse = require('fs-extra');
+
 // Compile Pug and SASS files in /app
 pugCompiler.compilePugFiles(__dirname + '/app');
 sassCompiler.compileSassFile(__dirname + '/app/sass/main.scss');
+
+// Copy js files
+let copyOptions = {
+    clobber: true // Overwrite existing files in public/js *without* prompting
+};
+fse.copy(__dirname + '/app/js', __dirname + '/public/js', copyOptions, (err) => {
+    if (!!err) {
+        console.error('Error copying scripts');
+    }
+});
 
 // Set our routing to the /public directory
 app.use('/', express.static(__dirname + '/public'));
