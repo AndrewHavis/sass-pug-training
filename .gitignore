@@ -4,3 +4,10 @@
 /bower_components/
 /node_modules/
 /public/
+/.env
+
+# The /data/ directory in this application contains information relating to the Flickr API
+# For some reason, the flickrapi extension puts this directory into root, rather than within /node_modules/flickrapi/
+# Therefore, we need to specifically ignore it here to prevent it being checked in to the GitHub repository
+# This information will be recreated by flickrapi anyway when the repository is cloned and the application is first run, so there's no need to bloat the repository by including it
+/data/

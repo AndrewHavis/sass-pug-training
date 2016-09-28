@@ -3,6 +3,7 @@
 .shape {
     display: table;
     margin: 0 auto;
+    margin-bottom: 1em;
 }
 
 @mixin rectangle($width, $height, $colour) {
