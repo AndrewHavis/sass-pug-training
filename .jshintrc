@@ -1,8 +1,11 @@
 {
     "globals": {
+        "$": false,
         "alert": false,
         "chrome": false,
-        "console": false
+        "console": false,
+        "define": false,
+        "jquery": false
     },
 
     "node" : true,

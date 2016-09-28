@@ -1,6 +1,6 @@
 'use strict';
 
-// Import jQuery
+// Import Bootstrap and jQuery
 require.config({
     paths: {
         bootstrap: '/lib/bootstrap/dist/js/bootstrap.min',
